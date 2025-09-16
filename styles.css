@@ -1,0 +1,32 @@
+
+:root{--indigo:#4f46e5;--muted:#6b7280;--bg:#f8fafc}
+body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:#111827}
+.container{max-width:980px;margin:0 auto;padding:20px}
+.header{background:#fff;border-bottom:1px solid #e6e7f0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;object-fit:contain;border-radius:6px}
+.brand-title{font-weight:700}
+.brand-sub{color:var(--muted);font-size:13px}
+.nav{display:flex;align-items:center;gap:10px}
+.nav-btn{background:transparent;border:0;padding:8px 10px;border-radius:6px;cursor:pointer}
+.cta{background:var(--indigo);color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+.main{padding:30px 20px 60px}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start}
+.hero h1{font-size:28px;margin:0 0 8px}
+.muted{color:var(--muted)}
+.features{margin:12px 0;padding-left:18px}
+.actions{display:flex;gap:10px;margin-top:12px}
+.btn{padding:8px 12px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.btn.primary{background:var(--indigo);color:#fff;border-color:var(--indigo)}
+.card{background:#fff;border-radius:8px;padding:16px;box-shadow:0 4px 12px rgba(15,15,15,0.06)}
+.info-card h3{margin:0 0 8px}
+.divider{border:none;border-top:1px solid #e6e7f0;margin:32px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.small-cards{display:flex;gap:10px}
+.small-card{background:#fff;padding:10px;border-radius:8px;border:1px solid #ececec}
+.matricule{background:#eef2ff;padding:16px;border-radius:8px;margin-top:18px}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.panel{background:#fff;padding:14px;border-radius:8px}
+.footer{text-align:center;color:var(--muted);padding:20px 0}
+@media(max-width:900px){.grid{grid-template-columns:1fr} .cards{grid-template-columns:1fr} .panels{grid-template-columns:1fr} .nav{display:none}}
